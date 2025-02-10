@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AsanaTeachers</title>
-    <link rel="stylesheet" href="./styles/teacher.css" />
+    <link rel="stylesheet" href="./styles/lessons.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -42,14 +42,14 @@
 
         <nav class="burger-nav">
           <ul>
-            <li><a href="/lessons.html">Lessons</a></li>
+            <li><a href="#">Lessons</a></li>
             <li><a href="/team.html">Our Team</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
         <div class="desktop-nav-block">
           <nav class="desktop-nav">
-            <a href="/lessons.html">Lessons</a>
+            <a href="#">Lessons</a>
             <a href="/team.html">Our Team</a>
             <a href="#">Contacts</a>
           </nav>
@@ -58,75 +58,70 @@
     </header>
 
     <main class="main">
-      <section class="section5">
-        <div class="section5_block1"><h2>Your teachers</h2></div>
-
-        <div class="section5_block2">
-          <div
-            class="teacher"
-            data-image="image/teachers/teacher1.jpg"
-            data-name="Rohan Bhattacharya"
-            data-history="Rohan Bhattacharya has been practicing yoga for 15 years and specializes in Hatha Yoga."
-          >
-            <img src="image/teachers/teacher1.jpg" alt="Rohan Bhattacharya" />
-            <h4>Rohan Bhattacharya</h4>
-          </div>
-          <div
-            class="teacher"
-            data-image="image/teachers/teacher2.jpg"
-            data-name="Arjun Deshmukh"
-            data-history="Arjun Deshmukh is an expert in Ashtanga Yoga and meditation techniques."
-          >
-            <img src="image/teachers/teacher2.jpg" alt="Arjun Deshmukh" />
-            <h4>Arjun Deshmukh</h4>
-          </div>
-          <div
-            class="teacher"
-            data-image="image/teachers/teacher3.jpg"
-            data-name="Vivek Iyer"
-            data-history="Vivek Iyer combines traditional yoga with modern breathing exercises."
-          >
-            <img src="image/teachers/teacher3.jpg" alt="Vivek Iyer" />
-            <h4>Vivek Iyer</h4>
-          </div>
-          <div
-            class="teacher"
-            data-image="image/teachers/teacher4.jpg"
-            data-name="Ananya Sharma"
-            data-history="Ananya Sharma has trained in Kundalini Yoga and holistic wellness."
-          >
-            <img src="image/teachers/teacher4.jpg" alt="Ananya Sharma" />
-            <h4>Ananya Sharma</h4>
-          </div>
-          <div
-            class="teacher"
-            data-image="image/teachers/teacher5.jpg"
-            data-name="Meera Kapoor"
-            data-history="Meera Kapoor is a master of Vinyasa Flow and mindfulness practices."
-          >
-            <img src="image/teachers/teacher5.jpg" alt="Meera Kapoor" />
-            <h4>Meera Kapoor</h4>
-          </div>
-          <div
-            class="teacher"
-            data-image="image/teachers/teacher6.jpg"
-            data-name="Priya Chaturvedi"
-            data-history="Priya Chaturvedi specializes in yoga for women and prenatal yoga."
-          >
-            <img src="image/teachers/teacher6.jpg" alt="Priya Chaturvedi" />
-            <h4>Priya Chaturvedi</h4>
-          </div>
+      <section class="section1">
+        <div class="section1_block1">
+          <img src="/image/classes/HathaYoga.jpg" alt="Hatha" />
+        </div>
+        <div class="section1_block2">
+          <div class="section1_block2_el1"><h2>Hatha Yoga</h2></div>
+          <div class="section1_block2_el2">p</div>
         </div>
       </section>
 
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <img id="modal-image" src="" alt="Teacher Image" />
-          <h3 id="modal-title"></h3>
-          <p id="modal-text"></p>
+      <section class="section7">
+        <img src="/image/TitlePhoto.jpg" alt="YogaClass" />
+        <div class="form-section">
+          <h2>Book Your Class</h2>
+          <form id="booking-form">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="class">Select Class:</label>
+              <select id="class" required>
+                <option value="">--Choose a Class--</option>
+                <option value="Hatha Yoga">Hatha Yoga</option>
+                <option value="Vinyasa Yoga">Vinyasa Yoga</option>
+                <option value="Ashtanga Yoga">Ashtanga Yoga</option>
+                <option value="Kundalini Yoga">Kundalini Yoga</option>
+                <option value="Pregnant Yoga">Pregnant Yoga</option>
+                <option value="Meditation Yoga">Meditation with bowls</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="time">Select Time:</label>
+              <select id="time" required>
+                <option value="">--Choose a Time--</option>
+              </select>
+            </div>
+            <button
+              class="submit-button"
+              onclick="window.location.href='thanks.html'"
+            >
+              Book Now
+            </button>
+          </form>
         </div>
-      </div>
+      </section>
+      <section class="confirmation-section" id="confirmation-section">
+        <h2>Booking Confirmation</h2>
+        <p id="confirmation-message"></p>
+      </section>
     </main>
     <footer>
       <p>&copy; AsanaLab</p>
@@ -139,7 +134,7 @@
         <img src="image/socialMedia/youtube.svg" alt="Youtube" />
       </div>
     </footer>
-    <script src="/scripts/team.js" defer></script>
+    <script src="/scripts/lessons.js" defer></script>
     <script src="/scripts/burger.js" defer></script>
   </body>
 </html>
