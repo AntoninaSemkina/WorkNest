@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsanaTeachers</title>
+    <link rel="stylesheet" href="./styles/teacher.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_block1">
+        <a href="/index.html"
+          ><img src="image/AsanaLogo.jpg" alt="AsanaLab Logo"
+        /></a>
+      </div>
+      <div class="header_block2">
+        <button class="burger-button" id="burger-button">
+          <svg
+            id="burger-open"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 80"
+            fill="#000"
+          >
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+          <svg
+            id="burger-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 26 26"
+            fill="none"
+            style="display: none"
+          >
+            <path
+              d="M16.0035 13L25.3506 3.65245C25.6077 3.39513 25.7496 3.05184 25.75 2.68578C25.75 2.31952 25.6081 1.97582 25.3506 1.71891L24.5315 0.900011C24.274 0.642084 23.9307 0.500824 23.5642 0.500824C23.1984 0.500824 22.8551 0.642084 22.5976 0.900011L13.2504 10.247L3.90285 0.900011C3.64573 0.642084 3.30224 0.500824 2.93598 0.500824C2.57012 0.500824 2.22663 0.642084 1.96951 0.900011L1.15 1.71891C0.616667 2.25225 0.616667 3.11973 1.15 3.65245L10.4974 13L1.15 22.3472C0.892683 22.6049 0.751016 22.9482 0.751016 23.3142C0.751016 23.6803 0.892683 24.0236 1.15 24.2811L1.96931 25.1C2.22642 25.3577 2.57012 25.4992 2.93577 25.4992C3.30203 25.4992 3.64553 25.3577 3.90264 25.1L13.2502 15.7529L22.5974 25.1C22.8549 25.3577 23.1982 25.4992 23.564 25.4992H23.5644C23.9305 25.4992 24.2738 25.3577 24.5313 25.1L25.3504 24.2811C25.6075 24.0238 25.7494 23.6803 25.7494 23.3142C25.7494 22.9482 25.6075 22.6049 25.3504 22.3474L16.0035 13Z"
+              fill="#000"
+            />
+          </svg>
+        </button>
+
+        <nav class="burger-nav">
+          <ul>
+            <li><a href="#">Lessons</a></li>
+            <li><a href="/team.html">Our Team</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="desktop-nav-block">
+          <nav class="desktop-nav">
+            <a href="#">Lessons</a>
+            <a href="/team.html">Our Team</a>
+            <a href="#">Contacts</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section5">
+        <div class="section5_block1"><h2>Your teachers</h2></div>
+
+        <div class="section5_block2">
+          <div
+            class="teacher"
+            data-image="image/teachers/teacher1.jpg"
+            data-name="Rohan Bhattacharya"
+            data-history="Rohan Bhattacharya has been practicing yoga for 15 years and specializes in Hatha Yoga."
+          >
+            <img src="image/teachers/teacher1.jpg" alt="Rohan Bhattacharya" />
+            <h4>Rohan Bhattacharya</h4>
+          </div>
+          <div
+            class="teacher"
+            data-image="image/teachers/teacher2.jpg"
+            data-name="Arjun Deshmukh"
+            data-history="Arjun Deshmukh is an expert in Ashtanga Yoga and meditation techniques."
+          >
+            <img src="image/teachers/teacher2.jpg" alt="Arjun Deshmukh" />
+            <h4>Arjun Deshmukh</h4>
+          </div>
+          <div
+            class="teacher"
+            data-image="image/teachers/teacher3.jpg"
+            data-name="Vivek Iyer"
+            data-history="Vivek Iyer combines traditional yoga with modern breathing exercises."
+          >
+            <img src="image/teachers/teacher3.jpg" alt="Vivek Iyer" />
+            <h4>Vivek Iyer</h4>
+          </div>
+          <div
+            class="teacher"
+            data-image="image/teachers/teacher4.jpg"
+            data-name="Ananya Sharma"
+            data-history="Ananya Sharma has trained in Kundalini Yoga and holistic wellness."
+          >
+            <img src="image/teachers/teacher4.jpg" alt="Ananya Sharma" />
+            <h4>Ananya Sharma</h4>
+          </div>
+          <div
+            class="teacher"
+            data-image="image/teachers/teacher5.jpg"
+            data-name="Meera Kapoor"
+            data-history="Meera Kapoor is a master of Vinyasa Flow and mindfulness practices."
+          >
+            <img src="image/teachers/teacher5.jpg" alt="Meera Kapoor" />
+            <h4>Meera Kapoor</h4>
+          </div>
+          <div
+            class="teacher"
+            data-image="image/teachers/teacher6.jpg"
+            data-name="Priya Chaturvedi"
+            data-history="Priya Chaturvedi specializes in yoga for women and prenatal yoga."
+          >
+            <img src="image/teachers/teacher6.jpg" alt="Priya Chaturvedi" />
+            <h4>Priya Chaturvedi</h4>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" src="" alt="Teacher Image" />
+          <h3 id="modal-title"></h3>
+          <p id="modal-text"></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; AsanaLab</p>
+      <div class="social-icons">
+        <img src="image/socialMedia/instagram.svg" alt="Instagram" />
+        <img src="image/socialMedia/linkedin.svg" alt="linkedin" />
+        <img src="image/socialMedia/telegram.svg" alt="Twitter" />
+        <img src="image/socialMedia/tiktok.svg" alt="TikTok" />
+        <img src="image/socialMedia/whatsapp.svg" alt="whatsapp" />
+        <img src="image/socialMedia/youtube.svg" alt="Youtube" />
+      </div>
+    </footer>
+    <script src="/scripts/team.js" defer></script>
+    <script src="/scripts/burger.js" defer></script>
+  </body>
+</html>
