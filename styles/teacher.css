@@ -73,3 +73,29 @@
   font-size: 24px;
   cursor: pointer;
 }
+.section_review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.section_review_1,
+.section_review_2,
+.section_review_3,
+.section_review_4,
+.section_review_5,
+.section_review_6,
+.section_review_7,
+.section_review_8,
+.section_review_9,
+.section_review_10,
+.section_review_11 {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.section_review_title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

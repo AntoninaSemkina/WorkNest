@@ -5,11 +5,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Liter, sans-serif;
   line-height: 1.6;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 h1 {
-  font-family: "Intro Regular", sans-serif;
+  font-family: "Liter", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -17,7 +24,7 @@ h1 {
   color: var(--dark-text-color);
 }
 h2 {
-  font-family: "Intro Bold", sans-serif;
+  font-family: "Liter", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
@@ -25,7 +32,7 @@ h2 {
   color: var(--dark-text-color);
 }
 h3 {
-  font-family: "Intro Book", sans-serif;
+  font-family: "Liter", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -34,7 +41,7 @@ h3 {
 }
 p,
 span {
-  font-family: "Intro Book", sans-serif;
+  font-family: "Liter", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -45,16 +52,26 @@ span {
 header img {
   height: 50px;
 }
-
 .header {
-  max-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 252, 252, 0.7);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1000;
   display: flex;
   align-items: center;
-  padding: 20px;
-  min-height: 80px;
-  margin: 0 auto;
-  gap: 50px;
+  padding: 0 50px;
+  margin: auto;
   justify-content: space-between;
+}
+
+.header.scrolled {
+  background-color: rgba(255, 252, 252, 0.7);
 }
 
 .header_block1 {
@@ -128,11 +145,15 @@ header img {
   max-width: 1200px;
   margin: auto;
   gap: 50px;
+  flex: 1;
+  margin-top: 150px;
 }
 footer {
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
+  text-align: center;
+  padding: 15px;
 }
 
 footer p {
@@ -243,6 +264,9 @@ footer .social-icons img {
   }
 }
 @media screen and (max-width: 560px) {
+  .main {
+    gap: 20px;
+  }
   .header_block1 {
     width: 50%;
   }
@@ -257,10 +281,10 @@ footer .social-icons img {
 }
 @media (max-width: 850px) {
   .desktop-nav {
-    display: none; /* Скрываем навигацию при маленьком экране */
+    display: none;
   }
 
   .burger-button {
-    display: block; /* Показываем бургер-меню */
+    display: block;
   }
 }
