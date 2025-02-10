@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AsanaLab</title>
+    <meta
+      name="description"
+      content="Join AsanaLab and explore the world of yoga. Practice at your own pace with expert teachers in Hatha, Vinyasa, Kundalini, and more."
+    />
+    <meta
+      name="keywords"
+      content="yoga classes, AsanaLab, online yoga, Hatha Yoga, Vinyasa Yoga, Kundalini Yoga, meditation, mindfulness, yoga for beginners, wellness"
+    />
+    <meta name="author" content="AsanaLab" />
+    <meta name="robots" content="index, follow" />
+    <title>AsanaLab | Discover the World of Yoga</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="header_block1">
-        <a href="#"><img src="image/AsanaLogo.jpg" alt="AsanaLab Logo" /></a>
+        <a href="/index.html"
+          ><img src="image/AsanaLogo.jpg" alt="AsanaLab Logo"
+        /></a>
       </div>
       <div class="header_block2">
         <button class="burger-button" id="burger-button">
@@ -43,14 +55,14 @@
             <li><a href="/lessons.html">Lessons</a></li>
             <li><a href="/team.html">Our Team</a></li>
             <li><a href="#contact">Contacts</a></li>
-            <li><a href="#contact">Reviews</a></li>
+            <li><a href="/team.html#review">Reviews</a></li>
           </ul>
         </nav>
         <div class="desktop-nav-block">
           <nav class="desktop-nav">
             <a href="/lessons.html">Lessons</a>
             <a href="/team.html">Our Team</a>
-            <a href="review">Reviews</a>
+            <a href="/team.html#review">Reviews</a>
           </nav>
         </div>
       </div>
@@ -140,11 +152,31 @@
             Fill out the form below and we will help you choose your first
             class.
           </p>
-          <form>
+          <form action="thanks.html" method="POST">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" required />
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
+            <div class="form-group checkbox-group">
+              <div class="checkbox-group_block1">
+                <input type="checkbox" id="privacy-policy" required />
+                <label for="privacy-policy">
+                  I agree to the
+                  <a href="privacy-policy.html" target="_blank"
+                    >Privacy Policy</a
+                  >
+                </label>
+              </div>
+              <div class="checkbox-group_block2">
+                <input type="checkbox" id="terms-conditions" required />
+                <label for="terms-conditions">
+                  I agree to the
+                  <a href="terms-conditions.html" target="_blank"
+                    >Terms Conditions</a
+                  >
+                </label>
+              </div>
+            </div>
             <button type="submit" class="section4_button">Send Request</button>
           </form>
         </div>
@@ -214,9 +246,7 @@
     </main>
     <footer>
       <div id="contact">
-        <p>
-          Email: <a href="mailto: asanalab@gmail.com">asanalab@gmail.com</a>
-        </p>
+        <p>Email: <a href="mailto:asanalab@gmail.com">asanalab@gmail.com</a></p>
         <p>Phone: <a href="tel:+1234567890">+91 564 239 119</a></p>
       </div>
       <div class="social-icons">
@@ -231,5 +261,6 @@
     </footer>
 
     <script src="/scripts/burger.js" defer></script>
+    <script src="/scripts/index.js" defer></script>
   </body>
 </html>

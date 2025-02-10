@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AsanaTeachers</title>
+    <meta
+      name="description"
+      content="Explore various yoga classes with expert teachers at AsanaLab. Join Hatha, Vinyasa, Kundalini, and more to enhance your practice. Book your class today!"
+    />
+    <meta
+      name="keywords"
+      content="yoga classes, Hatha Yoga, Vinyasa Yoga, Kundalini Yoga, Ashtanga Yoga, Meditation, wellness, mindfulness, yoga teachers"
+    />
+    <meta name="author" content="AsanaLab" />
+
+    <title>Classes | AsanaLab</title>
     <link rel="stylesheet" href="./styles/lessons.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
@@ -42,22 +52,25 @@
 
         <nav class="burger-nav">
           <ul>
-            <li><a href="#">Lessons</a></li>
+            <li><a href="/lessons.html">Lessons</a></li>
             <li><a href="/team.html">Our Team</a></li>
             <li><a href="#contact">Contacts</a></li>
+            <li><a href="/team.html#review">Reviews</a></li>
           </ul>
         </nav>
         <div class="desktop-nav-block">
           <nav class="desktop-nav">
-            <a href="#">Lessons</a>
+            <a href="/lessons.html">Lessons</a>
             <a href="/team.html">Our Team</a>
             <a href="#contact">Contacts</a>
+            <a href="/team.html#review">Reviews</a>
           </nav>
         </div>
       </div>
     </header>
 
     <main class="main">
+      <h1>Join our classes</h1>
       <section class="section1">
         <div class="section1_block1">
           <div id="hatha" class="section1_block1_el1">
@@ -256,12 +269,14 @@
         <img src="/image/TitlePhoto.jpg" alt="YogaClass" />
         <div class="form-section">
           <h2>Book Your Class</h2>
-          <form id="booking-form">
+
+          <form id="booking-form" action="thanks.html" method="POST">
             <div class="form-group">
               <label for="name">Your Name:</label>
               <input
                 type="text"
                 id="name"
+                name="name"
                 placeholder="Enter your name"
                 required
               />
@@ -271,13 +286,14 @@
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="Enter your email"
                 required
               />
             </div>
             <div class="form-group">
               <label for="class">Select Class:</label>
-              <select id="class" required>
+              <select id="class" name="class" required>
                 <option value="">--Choose a Class--</option>
                 <option value="Hatha Yoga">Hatha Yoga</option>
                 <option value="Vinyasa Yoga">Vinyasa Yoga</option>
@@ -289,7 +305,7 @@
             </div>
             <div class="form-group">
               <label for="time">Select Time:</label>
-              <select id="time" required>
+              <select id="time" name="time" required>
                 <option value="">--Choose a Time--</option>
               </select>
             </div>
@@ -315,11 +331,7 @@
               </div>
             </div>
 
-            <button
-              class="submit-button"
-              id="submit-btn"
-              onclick="window.location.href='thanks.html'"
-            >
+            <button class="submit-button" id="submit-btn" type="submit">
               Book Now
             </button>
           </form>
@@ -332,9 +344,7 @@
     </main>
     <footer>
       <div id="contact">
-        <p>
-          Email: <a href="mailto: asanalab@gmail.com">asanalab@gmail.com</a>
-        </p>
+        <p>Email: <a href="mailto:asanalab@gmail.com">asanalab@gmail.com</a></p>
         <p>Phone: <a href="tel:+1234567890">+91 564 239 119</a></p>
       </div>
       <div class="social-icons">

@@ -22,26 +22,32 @@ document.getElementById("class").addEventListener("change", function () {
     });
   }
 });
-
 document
   .getElementById("booking-form")
   .addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
     const selectedClass = document.getElementById("class").value;
-    const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
+    const privacyPolicy = document.getElementById("privacy-policy").checked;
+    const termsConditions = document.getElementById("terms-conditions").checked;
 
-    if (!name || !email || !selectedClass || !date || !time) {
+    if (!name || !email || !selectedClass || !time) {
       alert("Please fill in all fields before booking!");
+      return;
+    }
+
+    if (!privacyPolicy || !termsConditions) {
+      alert("You must agree to the Privacy Policy and Terms & Conditions.");
       return;
     }
 
     localStorage.setItem("bookingName", name);
     localStorage.setItem("bookingClass", selectedClass);
-    localStorage.setItem("bookingDate", date);
     localStorage.setItem("bookingTime", time);
     localStorage.setItem("bookingEmail", email);
+
+    window.location.href = "thanks.html";
   });

@@ -20,7 +20,7 @@ h1 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  padding: 10px 0;
+  padding: 10px 20px;
   color: var(--dark-text-color);
 }
 h2 {
@@ -169,6 +169,37 @@ footer .social-icons img {
   width: 30px;
   margin: 0 10px;
 }
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.checkbox-group_block1,
+.checkbox-group_block2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  align-items: start;
+  text-align: left;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-group a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.checkbox-group a:hover {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -216,6 +247,7 @@ footer .social-icons img {
     display: none;
     flex-direction: column;
     background-color: #fff;
+    color: #000;
     position: absolute;
     top: 70px;
     right: 20px;
