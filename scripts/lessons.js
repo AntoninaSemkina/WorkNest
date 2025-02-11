@@ -32,15 +32,13 @@ document
     const selectedClass = document.getElementById("class").value;
     const time = document.getElementById("time").value;
     const privacyPolicy = document.getElementById("privacy-policy").checked;
-    const termsConditions = document.getElementById("terms-conditions").checked;
-
     if (!name || !email || !selectedClass || !time) {
       alert("Please fill in all fields before booking!");
       return;
     }
 
-    if (!privacyPolicy || !termsConditions) {
-      alert("You must agree to the Privacy Policy and Terms & Conditions.");
+    if (!privacyPolicy) {
+      alert("You must agree to the Privacy Policy.");
       return;
     }
 

@@ -149,6 +149,8 @@ header img {
   margin-top: 150px;
 }
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
@@ -156,19 +158,6 @@ footer {
   padding: 15px;
 }
 
-footer p {
-  margin-bottom: 10px;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-}
-
-footer .social-icons img {
-  width: 30px;
-  margin: 0 10px;
-}
 .checkbox-group {
   display: flex;
   flex-direction: column;
@@ -200,6 +189,24 @@ footer .social-icons img {
 .checkbox-group a:hover {
   text-decoration: underline;
 }
+.footer_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px;
+}
+.menu,
+.documents {
+  display: flex;
+  flex-direction: column;
+}
+.menu a,
+.documents a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -213,7 +220,7 @@ footer .social-icons img {
   }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1001px) {
   .burger-button {
     display: none;
   }
@@ -226,7 +233,7 @@ footer .social-icons img {
     display: block;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .burger-button {
     display: block;
   }
@@ -301,6 +308,9 @@ footer .social-icons img {
   }
   .header_block1 {
     width: 50%;
+  }
+  .footer_main {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 450px) {

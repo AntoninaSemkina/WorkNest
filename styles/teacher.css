@@ -73,43 +73,39 @@
   font-size: 24px;
   cursor: pointer;
 }
-.section_review {
+.section_review_block2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
-.section_review_1,
-.section_review_2,
-.section_review_3,
-.section_review_4,
-.section_review_5,
-.section_review_6,
-.section_review_7,
-.section_review_8,
-.section_review_9,
-.section_review_10,
-.section_review_11 {
+.section_review_item {
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(244, 243, 238, 0.965);
 }
-.section_review_title {
-  text-align: center;
+
+.section_review_block1 {
+  text-align: left;
   justify-content: center;
-  align-items: center;
   margin: auto;
+  gap: 20px;
+  padding: 20px;
 }
 @media screen and (max-width: 1200px) {
   .section5_block2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .section_review {
+  .section_review_block2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 800px) {
-  .section_review {
+  .section_review_block2 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
