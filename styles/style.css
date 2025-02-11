@@ -279,47 +279,64 @@ input {
 }
 .section6_block2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
   margin: 20px;
   justify-content: space-between;
 }
-.section6_block2 div {
-  border-radius: 10px;
-}
-
-.membership-card {
+.section6_block2_el1 img,
+.section6_block2_el2 img,
+.section6_block2_el3 img,
+.section6_block2_el4 img,
+.section6_block2_el5 img,
+.section6_block2_el6 img {
   width: 100%;
   height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+  object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 20px;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
 }
-
-.membership-content {
-  height: 300px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 8px;
-  width: 80%;
-  color: #fff;
-}
-
-.membership-content h4 {
+.section6_block2_el1 h4,
+.section6_block2_el2 h4,
+.section6_block2_el3 h4,
+.section6_block2_el4 h4,
+.section6_block2_el5 h4,
+.section6_block2_el6 h4 {
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 22px;
 }
-
-.membership-content p,
-.membership-content ul {
+.section6_block2_el1 button,
+.section6_block2_el2 button,
+.section6_block2_el3 button,
+.section6_block2_el4 button,
+.section6_block2_el5 button,
+.section6_block2_el6 button {
+  width: 100%;
+  margin: auto;
+}
+.section6_block2_el1 button a,
+.section6_block2_el2 button a,
+.section6_block2_el3 button a,
+.section6_block2_el4 button a,
+.section6_block2_el5 button a,
+.section6_block2_el6 button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.section6_block2_el1 p,
+.section6_block2_el2 p,
+.section6_block2_el3 p,
+.section6_block2_el4 p,
+.section6_block2_el5 p,
+.section6_block2_el6 p,
+.section6_block2_el1 ul,
+.section6_block2_el2 ul,
+.section6_block2_el3 ul,
+.section6_block2_el4 ul,
+.section6_block2_el5 ul,
+.section6_block2_el6 ul {
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -334,9 +351,6 @@ input {
     display: none;
   }
   .section2_block2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .section6_block2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }

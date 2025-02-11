@@ -22,30 +22,3 @@ document.getElementById("class").addEventListener("change", function () {
     });
   }
 });
-document
-  .getElementById("booking-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const selectedClass = document.getElementById("class").value;
-    const time = document.getElementById("time").value;
-    const privacyPolicy = document.getElementById("privacy-policy").checked;
-    if (!name || !email || !selectedClass || !time) {
-      alert("Please fill in all fields before booking!");
-      return;
-    }
-
-    if (!privacyPolicy) {
-      alert("You must agree to the Privacy Policy.");
-      return;
-    }
-
-    localStorage.setItem("bookingName", name);
-    localStorage.setItem("bookingClass", selectedClass);
-    localStorage.setItem("bookingTime", time);
-    localStorage.setItem("bookingEmail", email);
-
-    window.location.href = "thanks_form.php";
-  });
