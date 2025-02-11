@@ -47,5 +47,5 @@ document
     localStorage.setItem("bookingTime", time);
     localStorage.setItem("bookingEmail", email);
 
-    window.location.href = "thanks.html";
+    window.location.href = "thanks_form.php";
   });
