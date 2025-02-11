@@ -160,3 +160,8 @@ ul {
   font-size: 16px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1000px) {
+  .section6_block2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
