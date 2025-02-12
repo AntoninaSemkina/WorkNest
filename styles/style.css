@@ -1,41 +1,20 @@
-.section1_button,
-.section2_button,
-.section3_button,
-.section4_button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff;
-  border: 2px solid #000;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.section1_button,
-.section4_button {
-  width: 50%;
-}
-
-.section1_button:hover,
-.section4_button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
 .section1,
-.section4 {
+.section4,
+.section5,
+.section6 {
   max-width: 1200px;
   height: 500px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: auto;
+  gap: 20px;
 }
 .section1 img,
-.section4_block1 img {
+.section4_block1 img,
+.section5_block2 img,
+.section6_block1 img {
   max-width: 1200px;
-  opacity: 0.5;
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -44,19 +23,41 @@
   justify-content: center;
 }
 .section1 img {
+  opacity: 0.5;
+}
+.section1 img {
   position: absolute;
 }
-.section1_block1,
-.section4_block1 {
+.section1_block1 {
   display: flex;
   width: 50%;
   flex-direction: column;
   text-align: left;
-  margin: 20px;
-  gap: 10px;
+  gap: 20px;
+  z-index: 101;
+  margin-top: auto;
+  padding: 20px;
+}
+.section1_block1 .btn {
+  width: 50%;
+}
+
+.section4_block1,
+.section4_block2,
+.section5_block2,
+.section5_block1,
+.section6_block1,
+.section6_block2 {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
   z-index: 101;
   margin-top: auto;
 }
+
 .section2 {
   max-width: 1200px;
   display: flex;
@@ -82,8 +83,7 @@
   gap: 20px;
 }
 .section2_block1,
-.section3_block1,
-.section5_block1 {
+.section3_block1 {
   margin: 20px 0;
 }
 .section2_block2_el1,
@@ -169,50 +169,30 @@
   width: max-content;
 }
 
+.section5_block1 {
+  order: 1;
+}
 .section5_block2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  order: 2;
 }
-.section5_block2_el1,
-.section5_block2_el2,
-.section5_block2_el3,
-.section5_block2_el4,
-.section5_block2_el5,
-.section5_block2_el6 {
-  position: relative;
-  text-align: center;
-  padding: 0px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.section5_block2_el1 img,
-.section5_block2_el2 img,
-.section5_block2_el3 img,
-.section5_block2_el4 img,
-.section5_block2_el5 img,
-.section5_block2_el6 img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-.section5_block2_el1 h4,
-.section5_block2_el2 h4,
-.section5_block2_el3 h4,
-.section5_block2_el4 h4,
-.section5_block2_el5 h4,
-.section5_block2_el6 h4 {
-  bottom: 20px;
-  left: 50%;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
+.section5_block1 p,
+.section6_block2 p {
   padding: 20px;
-  text-align: center;
-  width: max-content;
 }
+.section5_block1 ul,
+.section6_block2 ul {
+  padding-left: 50px;
+}
+.section5_block1,
+.section6_block2 {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.section4_block2 {
+  justify-content: space-between;
+}
+
 input {
   display: flex;
   flex-direction: column;
@@ -230,7 +210,6 @@ input {
   border-radius: 5px;
   padding: 0 5px;
 }
-
 .section7 {
   max-width: 1200px;
   display: flex;
@@ -277,69 +256,6 @@ input {
 .section7 {
   margin: 20px;
 }
-.section6_block2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
-  margin: 20px;
-  justify-content: space-between;
-}
-.section6_block2_el1 img,
-.section6_block2_el2 img,
-.section6_block2_el3 img,
-.section6_block2_el4 img,
-.section6_block2_el5 img,
-.section6_block2_el6 img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-.section6_block2_el1 h4,
-.section6_block2_el2 h4,
-.section6_block2_el3 h4,
-.section6_block2_el4 h4,
-.section6_block2_el5 h4,
-.section6_block2_el6 h4 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-.section6_block2_el1 button,
-.section6_block2_el2 button,
-.section6_block2_el3 button,
-.section6_block2_el4 button,
-.section6_block2_el5 button,
-.section6_block2_el6 button {
-  width: 100%;
-  margin: auto;
-}
-.section6_block2_el1 button a,
-.section6_block2_el2 button a,
-.section6_block2_el3 button a,
-.section6_block2_el4 button a,
-.section6_block2_el5 button a,
-.section6_block2_el6 button a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-}
-.section6_block2_el1 p,
-.section6_block2_el2 p,
-.section6_block2_el3 p,
-.section6_block2_el4 p,
-.section6_block2_el5 p,
-.section6_block2_el6 p,
-.section6_block2_el1 ul,
-.section6_block2_el2 ul,
-.section6_block2_el3 ul,
-.section6_block2_el4 ul,
-.section6_block2_el5 ul,
-.section6_block2_el6 ul {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
 
 @media screen and (max-width: 1200px) {
   .section1_block2 {
@@ -366,8 +282,28 @@ input {
   .section4_block1 {
     display: none;
   }
-  .section4_block2 {
+  .section4_block2,
+  .section7_block2_el1,
+  .section7_block2_el2 {
     margin: auto;
+    width: 100%;
+  }
+
+  .section5,
+  .section6,
+  .section7_block2 {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .section5 {
+    flex-direction: column-reverse;
+  }
+  .section5_block1,
+  .section5_block2,
+  .section6_block1,
+  .section6_block2 {
+    width: 100%;
+    height: fit-content;
   }
   .section3_block2 {
     grid-template-columns: repeat(1, 1fr);

@@ -127,24 +127,7 @@ ul {
   margin-bottom: 10px;
   font-size: 22px;
 }
-.section6_block2_el1 button,
-.section6_block2_el2 button,
-.section6_block2_el3 button,
-.section6_block2_el4 button,
-.section6_block2_el5 button,
-.section6_block2_el6 button {
-  width: 100%;
-  margin: auto;
-}
-.section6_block2_el1 button a,
-.section6_block2_el2 button a,
-.section6_block2_el3 button a,
-.section6_block2_el4 button a,
-.section6_block2_el5 button a,
-.section6_block2_el6 button a {
-  text-decoration: none;
-  color: #fff;
-}
+
 .section6_block2_el1 p,
 .section6_block2_el2 p,
 .section6_block2_el3 p,

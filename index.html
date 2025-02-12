@@ -63,6 +63,7 @@
           <nav class="desktop-nav">
             <a href="lessons.html">Lessons</a>
             <a href="team.html">Our Team</a>
+            <a href="#contact">Contacts</a>
             <a href="team.html#review">Reviews</a>
             <a href="abonements.html">Abonement</a>
           </nav>
@@ -82,7 +83,7 @@
           </p>
 
           <button
-            class="section1_button"
+            class="btn"
             onclick="window.location.href='lessons.html#bookingClass'"
           >
             JOIN
@@ -114,27 +115,27 @@
 
         <div class="section3_block2">
           <div class="section3_block2_el1">
-            <img src="image/HathaYoga.jpg" alt="PracticeHatha" />
+            <img src="image/hathaClass.jpeg" alt="PracticeHatha" />
             <a href="lessons.html#hatha"><h4>Hatha Yoga</h4></a>
           </div>
           <div class="section3_block2_el2">
-            <img src="image/JivamuktiYoga.jpg" alt="PracticeJivamukti" />
+            <img src="image/jivamuktiClass.jpeg" alt="PracticeJivamukti" />
             <a href="lessons.html#jivamukti"><h4>Jivamukti Yoga</h4></a>
           </div>
           <div class="section3_block2_el3">
-            <img src="image/KundaliniYoga.jpg" alt="PracticeKundalini" />
+            <img src="image/kundaliniClass.jpeg" alt="PracticeKundalini" />
             <a href="lessons.html#kundalini"><h4>Kundalini Yoga</h4></a>
           </div>
           <div class="section3_block2_el4">
-            <img src="image/VinyasaYoga.jpg" alt="PracticeVinyasa" />
+            <img src="image/vinyasaClass.jpeg" alt="PracticeVinyasa" />
             <a href="lessons.html#vinyasa"><h4>Vinyasa Yoga</h4></a>
           </div>
           <div class="section3_block2_el5">
-            <img src="image/PregnantYoga.jpg" alt="PracticePregnant" />
+            <img src="image/prednantClass.jpeg" alt="PracticePregnant" />
             <a href="lessons.html#pregnant"><h4>Yoga for pregnant women</h4></a>
           </div>
           <div class="section3_block2_el6">
-            <img src="image/MeditationYoga.jpg" alt="PracticeMeditation" />
+            <img src="image/meditationClass.jpeg" alt="PracticeMeditation" />
             <a href="lessons.html#meditation"
               ><h4>Meditations with bowls</h4></a
             >
@@ -159,8 +160,13 @@
             <input type="email" id="email" name="email" required />
             <div class="form-group checkbox-group">
               <div class="checkbox-group_block1">
-                <input type="checkbox" id="privacy-policy" name="privacy"
-                value="on" required />
+                <input
+                  type="checkbox"
+                  id="privacy-policy"
+                  name="privacy"
+                  value="on"
+                  required
+                />
                 <label for="privacy-policy">
                   I agree to the
                   <a href="privacy-policy.html" target="_blank"
@@ -169,129 +175,79 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="section4_button">Send Request</button>
+            <button type="submit" class="btn">Send Request</button>
           </form>
         </div>
       </section>
 
       <section class="section5">
         <div class="section5_block1">
-          <h2>Your teachers</h2>
+          <div class="section5_block1_el1">
+            <h2>Our Teachers – Experts in Their Field</h2>
+            <p>
+              At AsanaLab, you will learn from professionals with years of
+              experience and deep expertise in their fields. They not only share
+              their knowledge but also inspire, helping each student unlock
+              their full potential.
+            </p>
+            <h3>Why Practice with Our Teachers?</h3>
+            <ul>
+              <li>Individual Approach</li>
+              <li>Supportive and Inspiring Atmosphere</li>
+              <li>Years of Experience</li>
+              <li>Deep Understanding of Yoga Philosophy</li>
+            </ul>
+          </div>
+          <div class="section5_block1_el2">
+            <button type="submit" class="btn">
+              <a href="team.html">Get to know our team better!</a>
+            </button>
+          </div>
         </div>
         <div class="section5_block2">
-          <div class="section5_block2_el1">
-            <img src="image/yogaTeacher1.jpeg" alt="Rohan Bhattacharya" />
-            <h4>Rohan Bhattacharya</h4>
-          </div>
-          <div class="section5_block2_el2">
-            <img src="image/yogaTeacher2.jpeg" alt="Arjun Deshmukh" />
-            <h4>Arjun Deshmukh</h4>
-          </div>
-          <div class="section5_block2_el3">
-            <img src="image/yogaTeacher3.jpeg" alt="Vivek Iyer" />
-            <h4>Vivek Iyer</h4>
-          </div>
-          <div class="section5_block2_el4">
-            <img src="image/yogaTeacher4.jpeg" alt="Ananya Sharma" />
-            <h4>Ananya Sharma</h4>
-          </div>
-          <div class="section5_block2_el5">
-            <img src="image/yogaTeacher5.jpeg" alt="Meera Kapoor" />
-            <h4>Meera Kapoor</h4>
-          </div>
-          <div class="section5_block2_el6">
-            <img src="image/yogaTeacher6.jpeg" alt="Priya Chaturvedi" />
-            <h4>Priya Chaturvedi</h4>
-          </div>
+          <img src="image/teachersMainpage.jpeg" alt="YogaTeachers" />
         </div>
       </section>
 
       <section class="section6">
         <div class="section6_block1">
-          <h2>Yoga Class Membership Options at AsanaLab</h2>
+          <img src="image/abonementMain.jpeg" alt="YogaClass" />
         </div>
-            <div class="section6_block2">
-              <div class="section6_block2_el1">
-                <img src="image/abonement1.jpeg" alt="abonement1">
-                  <h4>Private Sessions</h4>
-                  <p>One-on-one training with an instructor</p>
-                  <ul>
-                    <li>Personalized approach to practice</li>
-                    <li>Correction of posture and technique</li>
-                    <li>Tailored program based on individual goals</li>
-                  </ul>
-                  <h2><strong>$50 per session</strong></h2>
-                  <button type="submit" class="section4_button"><a href="abonements.html#abonement">Book abonement</a></button>
-                </div>
-
-                <div class="section6_block2_el2">
-                  <img src="image/abonement2.jpeg" alt="abonement1">
-                  <h4>Single Class Pass</h4>
-                  <p>Attend any group session</p>
-                  <ul>
-                    <li>Flexibility to choose any class</li>
-                    <li>Opportunity to try different styles</li>
-                    <li>No membership commitment</li>
-                  </ul>
-                  <h2><strong>$20 per class</strong></h2>
-                  <button type="submit" class="section4_button"><a href="abonements.html#abonement">Book abonement</a></button>
-                </div>
-
-                <div class="section6_block2_el3">
-                  <img src="image/abonement3.jpeg" alt="abonement1">
-                  <h4>8-Class Pass</h4>
-                  <p>Monthly subscription</p>
-                  <ul>
-                    <li>Valid for 30 days</li>
-                    <li>8 classes of your choice</li>
-                    <li>Save $40 compared to single classes</li>
-                  </ul>
-                  <h2><strong>$120</strong></h2>
-                  <button type="submit" class="section4_button"><a href="abonements.html#abonement">Book abonement</a></button>
-                </div>
-
-                <div class="section6_block2_el4">
-                  <img src="image/abonement4.jpeg" alt="abonement1">
-                  <h4>12-Class Pass</h4>
-                  <p>For those who practice regularly</p>
-                  <ul>
-                    <li>Valid for 30 days</li>
-                    <li>12 classes of your choice</li>
-                    <li>Save $80 compared to single classes</li>
-                  </ul>
-                  <h2><strong>$160</strong></h2>
-                  <button type="submit" class="section4_button"><a href="abonements.html#abonement">Book abonement</a></button>
-                </div>
-
-              
-                <div class="section6_block2_el5">
-                  <img src="image/abonement5.jpeg" alt="abonement1">
-                  <h4>Online Private Class</h4>
-                  <p>Practice from home via Zoom</p>
-                  <ul>
-                    <li>Live virtual sessions</li>
-                    <li>Access to recordings</li>
-                    <li>Real-time interaction with instructors</li>
-                  </ul>
-                  <h2><strong>Starting from $30</strong></h2>
-                  <button type="submit" class="section4_button"><a href="abonements.html#abonement">Book abonement</a></button>
-                </div>
-
-              
-                <div class="section6_block2_el6">
-                  <img src="image/abonement6.jpeg" alt="abonement1">
-                  <h4>Online Group Class</h4>
-                  <p>Practice from home via Zoom</p>
-                  <ul>
-                    <li>Live virtual sessions</li>
-                    <li>Access to recordings</li>
-                    <li>Real-time interaction with instructors</li>
-                  </ul>
-                  <h2><strong>Starting from $15</strong></h2>
-                  <button type="submit" class="section4_button"><a href="abonements.html#abonement">Book abonement</a></button>
-                </div>
-            </div>
-          </section>
+        <div class="section6_block2">
+          <div class="section6_block2_el1">
+            <h2>
+              Memberships at AsanaLab – Flexible Options for Your Practice
+            </h2>
+            <p>
+              At AsanaLab, we offer convenient and cost-effective memberships
+              that allow you to practice yoga at your own pace and at an
+              affordable price. Choose the right option and start your journey
+              to harmony and balance today!
+            </p>
+            <h3>Why Choose Us?</h3>
+            <ul>
+              <li>
+                Flexible Schedule – Choose the most convenient time for your
+                practice.
+              </li>
+              <li>
+                Experienced Instructors – Our teachers will help you reach new
+                heights.
+              </li>
+              <li>
+                Affordable Prices – We offer great value for all skill levels.
+              </li>
+              <li>
+                Friendly Atmosphere – Join a community of like-minded
+                individuals!
+              </li>
+            </ul>
+          </div>
+          <div class="section6_block2_el2">
+            <button type="submit" class="btn">
+              <a href="abonements.html"> Choose your membership now!</a>
+            </button>
+          </div>
         </div>
       </section>
 
