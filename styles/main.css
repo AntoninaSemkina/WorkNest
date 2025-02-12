@@ -20,7 +20,6 @@ h1 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  padding: 10px 20px;
   color: var(--dark-text-color);
 }
 h2 {
@@ -48,24 +47,25 @@ span {
   margin: 5px 0 0 0;
   color: var(--dark-text-color);
 }
-
-header img {
-  height: 50px;
+.header-img {
+  position: absolute;
+  width: 100%;
 }
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
   color: white;
+  background-color: #fff;
   padding: 15px 0;
   text-align: center;
   transition: background-color 0.3s ease-in-out;
   z-index: 1000;
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  padding: 25px 50px;
   margin: auto;
   justify-content: space-between;
 }
@@ -73,6 +73,13 @@ header img {
 .header_block1 {
   display: flex;
   align-items: center;
+}
+.header_block1 a {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Liter-Regular" sans-serif;
+  font-weight: 600;
+  color: rgb(27, 20, 20);
 }
 
 .header_block1 img {
@@ -93,12 +100,13 @@ header img {
 
 .desktop-nav a {
   text-decoration: none;
-  color: #000;
+  color: rgb(27, 20, 20);
   font-weight: bold;
   font-size: 18px;
   border-radius: 10px;
   padding: 5px 15px;
   margin: 0 10px;
+  border: 1px solid rgb(27, 20, 20);
 }
 
 .burger-button {
@@ -139,7 +147,7 @@ header img {
   flex-direction: column;
   max-width: 1200px;
   margin: auto;
-  gap: 50px;
+  gap: 20px;
   flex: 1;
   margin-top: 150px;
 }
