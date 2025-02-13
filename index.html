@@ -4,14 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO Meta Tags -->
+    <title>
+      WorkNest | Flexible & Modern Coworking Spaces for Productivity
+    </title>
+    <meta
+      name="description"
+      content="Discover WorkNest – a modern coworking space designed for productivity, collaboration, and comfort. Private offices, shared workspaces, and meeting rooms available with flexible rental options."
+    />
+    <meta
+      name="keywords"
+      content="coworking spaces, shared offices, private offices, office rental, meeting rooms, business workspace, WorkNest, flexible office, remote work"
+    />
     <meta name="author" content="WorkNest" />
     <meta name="robots" content="index, follow" />
-    <title>WorkNest | Comfortable space for productive work</title>
+    <!-- Open Graph (Facebook) -->
+    <meta
+      property="og:title"
+      content="WorkNest | Flexible & Modern Coworking Spaces for Productivity"
+    />
+    <meta
+      property="og:description"
+      content="Find the perfect coworking space at WorkNest. Private offices, shared workspaces, and meeting rooms designed for productivity and collaboration."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/image/TitleMain.jpeg"
+    />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="WorkNest | Flexible & Modern Coworking Spaces for Productivity"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover modern and comfortable coworking spaces at WorkNest. Choose from private offices, shared desks, and meeting rooms."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourwebsite.com/image/TitleMain.jpeg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/logo.png" type="image/x-icon" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <img class="header-img" src="image/TitleMainPage.jpeg" alt="OfficeRoom" />
     <header class="header">
       <div class="header_block1">
         <a href="index.html">WorkNest</a>
@@ -22,7 +67,7 @@
             id="burger-open"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 80"
-            fill="#000"
+            fill="rgb(27, 20, 20)"
           >
             <rect width="100" height="10"></rect>
             <rect y="30" width="100" height="10"></rect>
@@ -37,25 +82,25 @@
           >
             <path
               d="M16.0035 13L25.3506 3.65245C25.6077 3.39513 25.7496 3.05184 25.75 2.68578C25.75 2.31952 25.6081 1.97582 25.3506 1.71891L24.5315 0.900011C24.274 0.642084 23.9307 0.500824 23.5642 0.500824C23.1984 0.500824 22.8551 0.642084 22.5976 0.900011L13.2504 10.247L3.90285 0.900011C3.64573 0.642084 3.30224 0.500824 2.93598 0.500824C2.57012 0.500824 2.22663 0.642084 1.96951 0.900011L1.15 1.71891C0.616667 2.25225 0.616667 3.11973 1.15 3.65245L10.4974 13L1.15 22.3472C0.892683 22.6049 0.751016 22.9482 0.751016 23.3142C0.751016 23.6803 0.892683 24.0236 1.15 24.2811L1.96931 25.1C2.22642 25.3577 2.57012 25.4992 2.93577 25.4992C3.30203 25.4992 3.64553 25.3577 3.90264 25.1L13.2502 15.7529L22.5974 25.1C22.8549 25.3577 23.1982 25.4992 23.564 25.4992H23.5644C23.9305 25.4992 24.2738 25.3577 24.5313 25.1L25.3504 24.2811C25.6075 24.0238 25.7494 23.6803 25.7494 23.3142C25.7494 22.9482 25.6075 22.6049 25.3504 22.3474L16.0035 13Z"
-              fill="#000"
+              fill="rgb(27, 20, 20)"
             />
           </svg>
         </button>
 
         <nav class="burger-nav">
           <ul>
-            <li><a href="lessons.html">Co-working</a></li>
-            <li><a href="team.html">Office</a></li>
+            <li><a href="coworking.html">Co-working</a></li>
+            <li><a href="coworking.html#coworking">Booking</a></li>
+            <li><a href="coworking.html#reviews">Reviews</a></li>
             <li><a href="#contact">Contacts</a></li>
-            <li><a href="team.html#review">Reviews</a></li>
           </ul>
         </nav>
         <div class="desktop-nav-block">
           <nav class="desktop-nav">
-            <a href="lessons.html">Co-working</a>
-            <a href="team.html">Office</a>
+            <a href="coworking.html">Co-working</a>
+            <a href="coworking.html#coworking">Booking</a>
+            <a href="coworking.html#reviews">Reviews</a>
             <a href="#contact">Contacts</a>
-            <a href="team.html#review">Reviews</a>
           </nav>
         </div>
       </div>
@@ -63,6 +108,7 @@
 
     <main class="main">
       <section class="section1">
+        <img class="header-img" src="image/TitleMain.jpeg" alt="OfficeRoom" />
         <div class="section1_block1">
           <h1>WorkNest – Your Ideal Workspace</h1>
           <h2>Flexible Office Solutions for Maximum Productivity</h2>
@@ -76,7 +122,7 @@
 
           <button
             class="btn"
-            onclick="window.location.href='lessons.html#bookingClass'"
+            onclick="window.location.href='coworking.html#coworking'"
           >
             Choose office for you
           </button>
@@ -108,6 +154,49 @@
           <div class="section2_block2_el4">
             <img src="image/officeGallery4.jpeg" alt="Practice" />
             <h4>Lounge areas for relaxation and informal networking</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="sectionFeatures">
+        <div class="sectionFeatures_img">
+          <img
+            class="header-img"
+            src="image/officeOffer2.jpeg"
+            alt="OfficeRoom"
+          />
+        </div>
+
+        <div class="sectionFeatures_block1">
+          <div class="sectionFeatures_block1_el1">
+            <h3>Ergonomic Workstations</h3>
+          </div>
+          <div class="sectionFeatures_block1_el2">
+            <h3>High-Speed Wi-Fi</h3>
+          </div>
+          <div class="sectionFeatures_block1_el3">
+            <h3>Private Offices & Coworking Areas</h3>
+          </div>
+          <div class="sectionFeatures_block1_el4">
+            <h3>Meeting & Conference Rooms</h3>
+          </div>
+          <div class="sectionFeatures_block1_el5">
+            <h3>Business Lounge & Networking Zones</h3>
+          </div>
+          <div class="sectionFeatures_block1_el6">
+            <h3>Printing & Scanning Facilities</h3>
+          </div>
+          <div class="sectionFeatures_block1_el7">
+            <h3>On-Site Support & Security</h3>
+          </div>
+          <div class="sectionFeatures_block1_el8">
+            <h3>Kitchen & Coffee Stations</h3>
+          </div>
+          <div class="sectionFeatures_block1_el9">
+            <h3>Relaxation Areas</h3>
+          </div>
+          <div class="sectionFeatures_block1_el10">
+            <h3>Prime Location & Easy Access</h3>
           </div>
         </div>
       </section>
@@ -239,7 +328,7 @@
             </p>
           </div>
           <button type="submit" class="btn">
-            <a href="team.html">Book your office now!</a>
+            <a href="coworking.html">Book your office now!</a>
           </button>
         </div>
       </section>
@@ -282,14 +371,13 @@
       </section>
 
       <section class="section7">
-        <div class="section7_block1"><h2>Your practice starts here</h2></div>
-
+        <div class="section7_block1"><h2>Our office</h2></div>
         <div class="section7_block2">
           <div class="section7_block2_el1">
             <h3>How to find us:</h3>
-            <p>Daily from 05.00 to 22.00</p>
-            <p>9, Sunehri Bagh Rd, New Deli</p>
-            <p>AsanaLab</p>
+            <p>Daily from 09.00 a.m. to 6.00 p.m.</p>
+            <p>Pataudi House, New Deli</p>
+            <p>WorkNest</p>
             <div>
               <a
                 href="https://www.google.com/maps?q=28.62723954509519,77.21777347727253"
@@ -301,9 +389,9 @@
           </div>
           <div class="section7_block2_el2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.597112067192!2d77.21155554889975!3d28.60965775356525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2ba22265c57%3A0xc1807125d81b19aa!2s9%2C%20Sunehri%20Bagh%20Rd%2C%20Sunehri%20Bagh%20Road%20Area%2C%20Motilal%20Nehru%20Marg%20Area%2C%20New%20Delhi%2C%20Delhi%20110011%2C%20%D0%98%D0%BD%D0%B4%D0%B8%D1%8F!5e1!3m2!1sru!2sru!4v1739262200243!5m2!1sru!2sru"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d992.9086665203869!2d77.21996325004686!3d28.619648584270575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1739444033306!5m2!1sru!2sru"
               width="100%"
-              height="200px"
+              height="300px"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -318,16 +406,15 @@
         <div class="contact" id="contact">
           <h3>Contact to us</h3>
           <p>
-            Email: <a href="mailto:asanalab@gmail.com">asanalab@gmail.com</a>
+            Email: <a href="mailto:worknest@gmail.com">worknest@gmail.com</a>
           </p>
-          <p>Phone: <a href="tel:+1234567890">+91 564 239 119</a></p>
+          <p>Phone: <a href="tel:+1234567890">+91 739 126 004</a></p>
         </div>
         <div class="menu">
           <h3>Menu</h3>
-          <a href="lessons.html">Lessons</a>
-          <a href="team.html">Our Team</a>
-          <a href="team.html#review">Reviews</a>
-          <a href="abonements.html">Abonement</a>
+          <a href="coworking.html">Co-working</a>
+          <a href="coworking.html#coworking">Booking</a>
+          <a href="coworking.html#reviews">Reviews</a>
         </div>
         <div class="documents">
           <a href="terms-conditions.html" target="_blank">Terms Conditions</a>
@@ -335,9 +422,32 @@
         </div>
       </div>
 
-      <p>&copy; AsanaLab, 2025</p>
+      <p>&copy; WorkNest, 2025</p>
     </footer>
 
     <script src="scripts/burger.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const featureBlocks = document.querySelectorAll(
+          ".sectionFeatures_block1 div"
+        );
+
+        function revealOnScroll() {
+          featureBlocks.forEach((block, index) => {
+            const blockPosition = block.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (blockPosition < windowHeight - 50) {
+              setTimeout(() => {
+                block.classList.add("show");
+              }, index * 100);
+            }
+          });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+      });
+    </script>
   </body>
 </html>

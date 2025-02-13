@@ -20,7 +20,7 @@ h1 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: var(--dark-text-color);
+  color: rgb(27, 20, 20);
 }
 h2 {
   font-family: "Liter", sans-serif;
@@ -28,7 +28,7 @@ h2 {
   line-height: 30px;
   font-weight: 700;
   padding: 10px 0;
-  color: var(--dark-text-color);
+  color: rgb(27, 20, 20);
 }
 h3 {
   font-family: "Liter", sans-serif;
@@ -36,7 +36,7 @@ h3 {
   line-height: 24px;
   font-weight: 400;
   padding: 10px 0;
-  color: var(--dark-text-color);
+  color: rgb(27, 20, 20);
 }
 p,
 span {
@@ -45,11 +45,13 @@ span {
   line-height: 16px;
   font-weight: 400;
   margin: 5px 0 0 0;
-  color: var(--dark-text-color);
+  color: rgb(27, 20, 20);
 }
 .header-img {
   position: absolute;
   width: 100%;
+  height: 50%;
+  left: 0;
 }
 
 .header {
@@ -149,12 +151,13 @@ span {
   margin: auto;
   gap: 20px;
   flex: 1;
-  margin-top: 150px;
+  margin-top: 125px;
 }
 .footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   padding: 20px;
   background-color: #f9f9f9;
   text-align: center;
@@ -195,9 +198,9 @@ span {
 .footer_main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   text-align: left;
   padding: 20px;
+  gap: 50px;
 }
 .menu,
 .documents {
@@ -208,13 +211,13 @@ span {
 .documents a {
   text-decoration: none;
   cursor: pointer;
-  color: #000;
+  color: rgb(27, 20, 20);
 }
 .btn {
   width: 100%;
   padding: 10px 20px;
   background-color: white;
-  color: black;
+  color: rgb(27, 20, 20);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -227,9 +230,10 @@ span {
 }
 .btn a {
   text-decoration: none;
-  color: #000;
+  color: rgb(27, 20, 20);
   font-weight: 600;
 }
+
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 30px;
@@ -263,12 +267,7 @@ span {
   .desktop-nav {
     display: none;
   }
-  .section1_block1 {
-    width: 100%;
-  }
-  .section2 {
-    margin-top: 20px;
-  }
+
   header {
     justify-content: space-between;
   }
@@ -324,7 +323,7 @@ span {
     font-size: 16px;
   }
   .main {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -336,12 +335,18 @@ span {
   }
   .footer_main {
     flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 450px) {
-  .section1 {
-    margin-top: 100px;
-  }
   .header_block1 {
     width: 25%;
   }
@@ -353,5 +358,8 @@ span {
 
   .burger-button {
     display: block;
+  }
+  p {
+    font-size: 12px;
   }
 }
